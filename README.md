@@ -16,16 +16,16 @@ Non-English characters, such as Japanese characters, are supported.
 This script uses Ikaro Kun's Python YouTube API instead of the official Google API to facilitate the gathering of more than 50 videos in a playlist.
 
 ## User Guide
-1. Rename _MyConfigurationSample.py_ to _MyConfiguration.py_
-2. Fill in your API key in the new _MyConfiguration.py_
-3. Fill in your playlists in the new _MyConfiguration.py_
+1. Rename `MyConfigurationSample.py` to `MyConfiguration.py`
+2. Fill in your API key in the new `MyConfiguration.py`
+3. Fill in your playlists in the new `MyConfiguration.py`
 4. Run `python -W ignore Main.py`
     * Ignore warnings about region-locked videos because we still want to fetch the title & uploader
     * For a playlist with 500 videos, this script may take a whole minute to parse through.
 5. Look for text files with the extension `.out` within the subfolder `output`
 
 ## Additional Notes
-The _outputSample_ folder contains a sample of an output file produced from running this script. This folder and this file are both safe to delete once you've cloned this repository.
+The `outputSample` folder contains a sample of an output file produced from running this script. This folder and this file are both safe to delete once you've cloned this repository.
 
 ## Future Plans
 * Automate a diff tool between various output files
