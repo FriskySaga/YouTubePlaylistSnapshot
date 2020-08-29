@@ -4,10 +4,12 @@ Basically, this script takes a snapshot of a non-private YouTube playlist by out
 Non-English characters, such as Japanese characters, are supported.
 
 ## Setup
+### Version Notes
 * I used Python version 3.9.0b3
     * Any version past Python 3.6 will probably work. A minimum of Python 3.6 is needed to support f-strings
 * I used Python-YouTube version 0.6.0
 
+### Steps
 1. Run `pip install python-youtube` (preferably in a virtual environment)
 2. [Follow these steps to set up a Google Project and create an API key](https://python-youtube.readthedocs.io/en/latest/getting_started.html)
 
