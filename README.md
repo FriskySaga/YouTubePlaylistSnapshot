@@ -21,9 +21,8 @@ This script uses Ikaro Kun's Python YouTube API instead of the official Google A
     * For a playlist with 500 videos, this script may take a whole minute to parse through.
 5. Look for text files with the extension `.out` within the subfolder `output`
 
-## Resources
-* https://pypi.org/project/python-youtube/
-* https://python-youtube.readthedocs.io/en/latest/getting_started.html
+## Additional Notes
+The _outputSample_ folder contains a sample of an output file produced from running this script. This folder and this file are both safe to delete once you've cloned this repository.
 
 ## Future Plans
 * Automate a diff tool between various output files
