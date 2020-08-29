@@ -35,7 +35,7 @@ if __name__ == '__main__':
 
           outfile.write(video.snippet.title + '\n')
           if displayUploader:
-            outfile.write(f'Uploader: {video.snippet.channelTitle}\n\n')
+            outfile.write(f'{video.snippet.channelTitle}\n\n')
 
         except Exception as e:
           print(f'Exception occurred on "{playlistVideo.snippet.title}" within playlist {key} at index {index}: {e}')
