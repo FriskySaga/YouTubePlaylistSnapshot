@@ -10,3 +10,6 @@ PLAYLIST_IDS = {
   # 'Another Playlist'  : 'Another ID', # Comment out if you don't want to the script to see this playlist
 }
 
+# Whether to display the channel name of the video uploader
+DISPLAY_UPLOADER = True
+

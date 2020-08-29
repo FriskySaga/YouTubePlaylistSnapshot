@@ -12,5 +12,5 @@ __pycache__/
 MyConfigurations.py
 
 # Ignore output files
-*.out
+output/
 
