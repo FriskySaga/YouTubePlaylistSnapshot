@@ -3,6 +3,8 @@ Basically, this script takes a snapshot of a non-private YouTube playlist by out
 
 Non-English characters, such as Japanese characters, are supported.
 
+Region-blocked videos are also noted by the console output.
+
 ## Setup
 ### Version Notes
 * I used Python version 3.9.0b3
@@ -18,14 +20,15 @@ This script uses Ikaro Kun's Python YouTube API instead of the official Google A
 ## User Guide
 1. Rename `MyConfigurationSample.py` to `MyConfiguration.py`
 2. Fill in your API key in the new `MyConfiguration.py`
-3. Fill in your playlists in the new `MyConfiguration.py`
-4. Run `python -W ignore Main.py`
-    * Ignore warnings about region-locked videos because we still want to fetch the title & uploader
+3. Fill in the appropriate two-letter country code in the new `MyConfiguration.py`
+4. Fill in your playlists in the new `MyConfiguration.py`
+5. Run `python -W ignore Main.py`
+    * Ignore warnings about region-locked videos from the third-party API
     * For a playlist with 500 videos, this script may take a whole minute to parse through.
-5. Look for text files with the extension `.out` within the subfolder `output`
+6. Look for text files with the extension `.out` within the subfolders under the `output` folder
 
 ## Additional Notes
-The `outputSample` folder contains a sample of an output file produced from running this script. This folder and this file are both safe to delete once you've cloned this repository.
+The `outputSample` folder contains a sample of the output files produced from running this script. All contents within this folder, including the folder itself, are safe to delete once you have cloned the repository.
 
 ## Future Plans
 * Automate a diff tool between various output files

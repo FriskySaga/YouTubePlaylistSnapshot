@@ -54,7 +54,7 @@ if __name__ == '__main__':
     mkdir('output')
 
   # Then create another nested folder. Example: output/output-2020-09-14T173551
-  outputFolderPath = join('output', 'output-' + strftime(' %Y-%m-%dT%H%M%S', localtime()))
+  outputFolderPath = join('output', 'output-' + strftime('%Y-%m-%dT%H%M%S', localtime()))
   mkdir(outputFolderPath)
 
   # Remember to comment out the individual playlist keys from MyConfigurations if you don't want to loop through them all
