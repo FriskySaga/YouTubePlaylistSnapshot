@@ -26,12 +26,13 @@ This script uses Ikaro Kun's Python YouTube API instead of the official Google A
     * Ignore warnings about region-locked videos from the third-party API
     * For a playlist with 500 videos, this script may take a whole minute to parse through.
 6. Look for text files with the extension `.out` within the subfolders under the `output` folder
+7. Use WinMerge, Beyond Compare, or another data comparison utility to view differences between output files from two different runs
 
 ## Additional Notes
 The `outputSample` folder contains a sample of the output files produced from running this script. All contents within this folder, including the folder itself, are safe to delete once you have cloned the repository.
 
 ## Future Plans
-* Automate a diff tool between various output files
+* None!
 
 ## Acknowledgments
 THANK YOU, Ikaros Kun! Your wrapper and crystal clear documentation made this effort so much easier to work though! Please check out their API here: https://pypi.org/project/python-youtube/
