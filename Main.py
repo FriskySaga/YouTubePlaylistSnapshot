@@ -13,6 +13,10 @@ from time import localtime, strftime
 # Internal modules that are kept secret
 import MyConfigurations
 
+# Should be disabled by default
+DEBUG_MODE = True
+TRACE_MODE = True
+
 def isVideoBlocked(countryCode: str, video) -> bool:
   """Determine whether the video is blocked in the user's country.
 
@@ -26,18 +30,28 @@ def isVideoBlocked(countryCode: str, video) -> bool:
   """
   regionRestriction = video.contentDetails.regionRestriction
 
+  if TRACE_MODE:
+    print(f'\n\nRegionRestriction of {video.snippet.title}: {regionRestriction}')
+
   if not regionRestriction:
     return False
   else:
+    # NOTE: I have seen both blocked and unblocked videos when this value is None. Example: RegionRestriction(allowed=None)
     if regionRestriction.allowed == None:
+      if DEBUG_MODE:
+        print(f'\n\nRegionRestriction(allowed=None): {video.snippet.title}: {regionRestriction}')
       return False
+
     elif countryCode in regionRestriction.allowed:
       return False
+
     elif not countryCode in regionRestriction.blocked:
       return False
+
     elif countryCode in regionRestriction.blocked:
       print(f'\n\n{video.snippet.title} is blocked in the {countryCode} region')
       return True
+
     else:
       print(f'\n\nUnhandled case for RegionRestriction of {video.snippet.title}: {regionRestriction}')
       return True
