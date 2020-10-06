@@ -14,8 +14,8 @@ from time import localtime, strftime
 import MyConfigurations
 
 # Should be disabled by default
-DEBUG_MODE = True
-TRACE_MODE = True
+DEBUG_MODE = False
+TRACE_MODE = False
 
 def isVideoBlocked(countryCode: str, video) -> bool:
   """Determine whether the video is blocked in the user's country.
