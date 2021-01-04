@@ -1,3 +1,4 @@
+# To run the script: python -W ignore Main.py
 # Rename this sample file to MyConfigurations.py
 
 API_KEY = 'Your Google Project API Key'
