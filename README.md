@@ -13,7 +13,7 @@ Region-blocked videos are also noted by the console output.
 
 ### Steps
 1. Run `pip install python-youtube` (preferably in a virtual environment)
-2. [Follow these steps to set up a Google Project and create an API key](https://python-youtube.readthedocs.io/en/latest/getting_started.html)
+2. Follow these steps to [set up a Google Project](https://developers.google.com/workspace/marketplace/create-gcp-project) and [then create an API key](https://support.google.com/googleapi/answer/6158862?hl=en)
 
 This script uses Ikaro Kun's Python YouTube API instead of the official Google API to facilitate the gathering of more than 50 videos in a playlist.
 
